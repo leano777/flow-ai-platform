@@ -1,0 +1,350 @@
+# Flow AI Platform - Git Ignore Configuration
+
+# =============================================================================
+# Environment & Secrets
+# =============================================================================
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# Secret keys and certificates
+*.key
+*.pem
+*.p12
+*.crt
+secrets/
+private/
+
+# =============================================================================
+# Dependencies & Package Managers
+# =============================================================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+.pnp.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+poetry.lock
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================================================================
+# Build Output & Distribution
+# =============================================================================
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Python builds
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =============================================================================
+# Development & Testing
+# =============================================================================
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# =============================================================================
+# Database & Storage
+# =============================================================================
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Database backups
+*.sql.gz
+*.dump
+backup/
+
+# File uploads (development)
+uploads/
+media/
+static/media/
+
+# =============================================================================
+# Logs & Monitoring
+# =============================================================================
+
+# Application logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime logs
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# =============================================================================
+# Caching & Temporary Files
+# =============================================================================
+
+# Various cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+
+# =============================================================================
+# Docker & Containers
+# =============================================================================
+
+# Docker override files
+docker-compose.override.yml
+docker-compose.prod.yml
+
+# Container volumes (if using bind mounts)
+volumes/
+data/
+
+# =============================================================================
+# iOS Development
+# =============================================================================
+
+# Xcode
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# iOS builds
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+
+# =============================================================================
+# Platform-Specific Files
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# =============================================================================
+# CI/CD & Deployment
+# =============================================================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Helm charts
+charts/*.tgz
+
+# Kubernetes secrets
+k8s-secrets/
+
+# =============================================================================
+# Monitoring & Analytics
+# =============================================================================
+
+# Grafana
+grafana/data/
+
+# Prometheus
+prometheus/data/
+
+# =============================================================================
+# n8n Workflows
+# =============================================================================
+
+# n8n user data (contains credentials)
+n8n-data/
+
+# Workflow exports with credentials
+*-credentials.json
+
+# =============================================================================
+# Development Tools
+# =============================================================================
+
+# ESLint cache
+.eslintcache
+
+# Prettier cache
+.prettiercache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Storybook build outputs
+storybook-static/
+
+# =============================================================================
+# AI & ML Models
+# =============================================================================
+
+# Large model files
+*.model
+*.weights
+*.bin
+models/
+embeddings/
+
+# Vector database data
+qdrant_data/
+vector_storage/
+
+# =============================================================================
+# Documentation Generation
+# =============================================================================
+
+# Generated documentation
+docs/_build/
+site/
+
+# =============================================================================
+# Backup Files
+# =============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# =============================================================================
+# Custom Project Files
+# =============================================================================
+
+# Local configuration overrides
+config.local.json
+settings.local.json
+
+# Development scripts
+dev-scripts/
+local-scripts/
+
+# Personal notes and TODO files
+TODO.md
+NOTES.md
+notes/
+
+# =============================================================================
+# Package Manager Lock Files (Optional - uncomment if needed)
+# =============================================================================
+
+# Uncomment these if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =============================================================================
+# Large Files & Assets
+# =============================================================================
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Large images
+*.psd
+*.ai
+*.sketch
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
